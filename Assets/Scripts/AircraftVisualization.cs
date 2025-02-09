@@ -15,30 +15,12 @@ public class AircraftVisualization : MonoBehaviour
     public float roomDepth = 10f;
 
     private Dictionary<string, int> aircraftRoleCounts = new Dictionary<string, int>();
-    public Camera cameraToFace
-    {
-        get
-        {
-            EnsureFacingCamera();
-            return m_CameraToFace;
-        }
-        set => m_CameraToFace = value;
-    }
-
     void Start()
     {
         LoadHardcodedData();
         Create3DBarChart();
         CreateAxes();
-        EnsureFacingCamera();
     }
-
-    void EnsureFacingCamera()
-    {
-        if (m_CameraToFace == null)
-            m_CameraToFace = Camera.main;
-    }
-
     void LoadHardcodedData()
     {
         // Hardcoded aircraft data (Role, Country)
@@ -179,4 +161,23 @@ public class AircraftVisualization : MonoBehaviour
         textMesh.transform.rotation = Quaternion.Euler(0, rotationY, 0); // Apply rotation
         return textObj;
     }
+    public void DeleteGraph()
+    {
+        // Check if the parent object exists
+        if (barChartParent != null)
+        {
+            // Loop through all children and destroy them
+            foreach (Transform child in barChartParent.transform)
+            {
+                Destroy(child.gameObject);
+            }
+
+            Debug.Log("Graph deleted.");
+        }
+        else
+        {
+            Debug.LogWarning("Bar chart parent object is missing.");
+        }
+    }
+
 }
