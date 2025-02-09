@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibrary
+  m_EditorClassIdentifier: 
+  m_GuidLow: 5737878039032761238
+  m_GuidHigh: 1574176188204593308
+  m_DataStore:
+    m_Storage: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 4784213348068598958
+      m_GuidHigh: 14821747117439071902
+    m_SerializedTextureGuid:
+      m_GuidLow: 7486304800737450364
+      m_GuidHigh: 9870673660566282424
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: fighter
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4615974975009545819
+      m_GuidHigh: 3949761139826869422
+    m_SerializedTextureGuid:
+      m_GuidLow: 5883027825313352942
+      m_GuidHigh: 2464317938650123482
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: bomber
+    m_Texture: {fileID: 0}
