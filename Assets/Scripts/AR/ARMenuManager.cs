@@ -55,8 +55,8 @@ public class ARMenuManager : MonoBehaviour
     {
         (string buttonText, string sceneName)[] graphs = new[]
         {
-            ("Bar Chart", "BarChartScene"),
-            ("Pie Chart", "HeatmapScene"),
+            ("Bar Chart", "BarGraphScene"),
+            ("Heatmap Chart", "HeatmapScene"),
             ("Back to Main", "MenuScene")
         };
 

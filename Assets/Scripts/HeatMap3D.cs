@@ -222,7 +222,7 @@ public class Heatmap3D : MonoBehaviour
             GameObject textObject = new GameObject($"{axisName} Label {label}");
             TextMesh textMesh = textObject.AddComponent<TextMesh>();
             textMesh.text = label;
-            textMesh.fontSize = 16; // Adjust size as needed
+            textMesh.fontSize = 12; // Adjust size as needed
             textMesh.characterSize = 0.1f;
             textMesh.anchor = TextAnchor.MiddleCenter;
             textMesh.color = Color.black;
