@@ -176,7 +176,7 @@ public class Heatmap3D : MonoBehaviour
                 numberText.fontSize = 16; // Adjust size
                 numberText.characterSize = 0.1f;
                 numberText.anchor = TextAnchor.MiddleCenter;
-                numberText.color = Color.black;
+                numberText.color = Color.green;
 
                 // Position the label slightly above the bar
                 numberLabel.transform.position = new Vector3(position.x, position.y + (value * heightMultiplier) / 2f + 0.2f, position.z);
@@ -225,7 +225,7 @@ public class Heatmap3D : MonoBehaviour
             textMesh.fontSize = 12; // Adjust size as needed
             textMesh.characterSize = 0.1f;
             textMesh.anchor = TextAnchor.MiddleCenter;
-            textMesh.color = Color.black;
+            textMesh.color = Color.green;
 
             // **Rotation Fix: Rotate aircraft names properly**
             if (axis == Axis.X)

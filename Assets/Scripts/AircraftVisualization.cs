@@ -154,7 +154,7 @@ public class AircraftVisualization : MonoBehaviour
         TextMesh textMesh = textObj.AddComponent<TextMesh>();
         textMesh.text = text;
         textMesh.fontSize = 16; // Smaller font size for better clarity
-        textMesh.color = Color.black;
+        textMesh.color = Color.cyan;
         textMesh.anchor = TextAnchor.MiddleCenter;
         textMesh.characterSize = 0.1f * scaleFactor; // Reduce text size by the scaling factor
         textMesh.transform.position = position;
